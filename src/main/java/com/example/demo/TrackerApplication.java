@@ -18,7 +18,7 @@ public class TrackerApplication {
 
 
 	
-	
+	//mvn clean package spring-boot:repackage
 	public static void main(String[] args) {
 		SpringApplication.run(TrackerApplication.class, args);
 	}

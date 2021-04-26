@@ -20,6 +20,7 @@ public class TrackerApplication {
 	
 	//mvn clean package spring-boot:repackage
 	//mvn install
+	//mvn spring-boot:run
 	public static void main(String[] args) {
 		SpringApplication.run(TrackerApplication.class, args);
 	}

@@ -23,4 +23,13 @@ public class Login {
     
     @Size(min = 1, max = 100)
     private String lastName;
+    
+    
+    public String getemail() { 
+        return this.email; 
+    } 
+ 
+    public void setemail(String name) { 
+        this.email = email; 
+    } 
 }

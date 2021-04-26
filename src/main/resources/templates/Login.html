@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Page Title</title>
+  <title>Page Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body style="background-color: lightblue;">
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
+  <button type="button" class="btn btn-primary">Primary</button>
+
+<form th:action="@{/article}" th:object="${Login}" method="post">
+    <div class='is-node custom-form'>
+        <label>Title:</label>
+        <input type="text" th:field="*{email}"/>
+    </div>
+    <div class='is-node custom-form'>
+        <label>Content:</label>
+        <textarea th:field="*{content}"/>
+    </div>
+</form>
 
 </body>
 </html>

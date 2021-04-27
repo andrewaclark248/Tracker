@@ -12,18 +12,25 @@ import models.*;
 @Controller
 public class LoginController {
 	
-	@RequestMapping("/login")
-	
-	public String Login(Login login)
+	@RequestMapping("/")
+	public String Main(Login login)
 	{
-		login.addAttribute("login", new Login());
+		//login.addAttribute("login", new Login());
 		return "Login";
 	}
 	
+	/**
 	@ResponseBody
 	@RequestMapping
 	String entry() {
 		return "My test string this works u know it does";
+	}**/
+	
+	@RequestMapping("/login")
+	public String Login(Login login)
+	{
+		//login.addAttribute("login", new Login());
+		return "Login";
 	}
 	
 	

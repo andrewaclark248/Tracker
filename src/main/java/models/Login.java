@@ -13,23 +13,23 @@ public class Login {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    public Long id;
 	
     @Size(min = 1, max = 100)
-    private String email;
+	public String email;
 
     @Size(min = 1, max = 100)
-    private String firstName;
+    public String firstName;
     
     @Size(min = 1, max = 100)
-    private String lastName;
+    public String lastName;
     
     
-    public String getemail() { 
-        return this.email; 
+    public String getEmail() { 
+        return email; 
     } 
  
-    public void setemail(String name) { 
+    public void setEmail(String email) { 
         this.email = email; 
-    } 
+    } /******/
 }

@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-  <title>Page Title</title>
-  <meta charset="utf-8">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Page Title</title>
+	<meta charset="utf-8">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body style="background-color: lightblue;">
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-  <button type="button" class="btn btn-primary">Primary</button>
+	<h1>This is a Heading</h1>
+	<p>This is a paragraph.</p>
+	<button type="button" class="btn btn-primary">Primary</button>
 	<div class="form-group">
 		<form action="#" th:action="@{/login}" th:object="${login}" method="post">
-        	<p>Message: <input type="text" th:field="*{email}" /></p>
-        	<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
-  		</form>
+			<p>Message: <input type="text" th:field="*{email}" /></p>
+			<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+		</form>
 	</div>
 </body>
+
 </html>
-
-
-
